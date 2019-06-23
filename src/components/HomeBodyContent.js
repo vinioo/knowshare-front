@@ -30,6 +30,7 @@ export default class HomeBodyContent extends Component {
                         <div className="homebodyContentImage">
                             <img src={flatimage} alt="" srcset="" />
                         </div>
+                        <Card />
                     </div>
                 </div>
             </div>
