@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import io from 'socket.io-client';
 import './Bar.css';
 
 export default class Bar extends Component {
@@ -7,8 +8,21 @@ export default class Bar extends Component {
         red: 0
     };
      componentDidMount() {
-     this.calcBar();
+        this.registerToSocket();
+        this.calcBar();
     }
+
+    registerToSocket = () => {
+        const socket = io('http://localhost:4002');
+
+        socket.on('like', itemLiked => {
+            this.calcBar();
+        });
+        socket.on('dislike', itemLiked => {
+            this.calcBar();
+        });
+    };
+
     calcBar = () => {
         const { green, red } = this.props;
         const totalVotes = green + red;

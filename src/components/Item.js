@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import io from 'socket.io-client';
-import { Link } from 'react-router-dom';
 
 import FlipMove from 'react-flip-move';
 import Bar from './Bar';
