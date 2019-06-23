@@ -13,7 +13,7 @@ export default class Bar extends Component {
     }
 
     registerToSocket = () => {
-        const socket = io('http://localhost:4002');
+        const socket = io(process.env.URL);
 
         socket.on('like', itemLiked => {
             this.calcBar();
