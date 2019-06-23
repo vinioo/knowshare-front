@@ -15,8 +15,6 @@ export default class Item extends Component {
   };
   async componentDidMount() {
     this.registerToSocket();
-    console.log('oi')
-    console.log(process.env)
     await axios.get(`${process.env.REACT_APP_URL}/posts`).then(res => {
       const items = res.data;
       this.setState({ items: items });
