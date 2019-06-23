@@ -15,17 +15,14 @@ code {
   padding: 0 15vw;
   height: calc(100vh - 8vh);  min-height: 500px;
   width: 100%;
-  max-width: 1920px;
 }
 .containerHome {
   padding: 0 15vw;
   height: auto;
-  max-width: 1920px;
 }
 .containerAuto{
   padding: 0 15vw;
   height: auto;
   min-height: 500px;
-  max-width: 1920px;
 }
 
