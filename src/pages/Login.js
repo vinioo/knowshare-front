@@ -1,14 +1,14 @@
-import React, { Component } from "react";
-import axios from "axios";
+import React, { Component } from 'react';
+import axios from 'axios';
 
-import "./Login.css";
-import Input from "../components/Input";
-import ButtonOutline from "../components/ButtonOutline";
+import './Login.css';
+import Input from '../components/Input';
+import ButtonOutline from '../components/ButtonOutline';
 
 export default class Login extends Component {
   state = {
-    email: "",
-    pass: "",
+    email: '',
+    pass: '',
     error: false
   };
   handleSubmit = async e => {
@@ -18,12 +18,12 @@ export default class Login extends Component {
     const { email, pass } = this.state;
     e.preventDefault();
     await axios
-      .post(`${process.env.URL}/login`, {
+      .post(`${process.env.REACT_APP_URL}/login`, {
         email: email,
         password: pass
       })
       .then(res => {
-        this.props.history.push("/content");
+        this.props.history.push('/content');
       })
       .catch(err => {
         console.log(err);
@@ -54,7 +54,7 @@ export default class Login extends Component {
           />
           <ButtonOutline content="Login" onClick={this.handleSubmit} />
         </div>
-        {this.state.error && "Usuário ou senha incorretos!"}
+        {this.state.error && 'Usuário ou senha incorretos!'}
       </div>
     );
   }

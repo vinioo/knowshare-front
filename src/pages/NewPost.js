@@ -1,24 +1,24 @@
-import React, { Component } from "react";
-import axios from "axios";
+import React, { Component } from 'react';
+import axios from 'axios';
 
-import Input from "../components/Input";
-import ButtonOutline from "../components/ButtonOutline";
+import Input from '../components/Input';
+import ButtonOutline from '../components/ButtonOutline';
 
-import "./NewPost.css";
+import './NewPost.css';
 
 export default class NewPost extends Component {
   handleSubmit = async e => {
     this.setState({
-      title: "",
-      author: "",
-      description: "",
-      hashtags: "",
-      link: ""
+      title: '',
+      author: '',
+      description: '',
+      hashtags: '',
+      link: ''
     });
     const { title, author, description, hashtags, link } = this.state;
     e.preventDefault();
     await axios
-      .post(`${process.env.URL}/posts`, {
+      .post(`${process.env.REACT_APP_URL}/posts`, {
         title: title,
         author: author,
         descripton: description,
@@ -26,7 +26,7 @@ export default class NewPost extends Component {
         link: link
       })
       .then(res => {
-        this.props.history.push("/content");
+        this.props.history.push('/content');
       })
       .catch(err => {
         console.log(err);

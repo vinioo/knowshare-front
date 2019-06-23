@@ -1,36 +1,36 @@
-import React, { Component } from "react";
-import axios from "axios";
+import React, { Component } from 'react';
+import axios from 'axios';
 
-import "./Login.css";
-import Input from "../components/Input";
-import ButtonOutline from "../components/ButtonOutline";
-import "./Register.css";
+import './Login.css';
+import Input from '../components/Input';
+import ButtonOutline from '../components/ButtonOutline';
+import './Register.css';
 
 export default class Register extends Component {
   state = {
-    name: "",
-    email: "",
-    pass: "",
-    errorMessage: ""
+    name: '',
+    email: '',
+    pass: '',
+    errorMessage: ''
   };
   handleSubmit = async e => {
     e.preventDefault();
     this.setState({
-      errorMessage: ""
+      errorMessage: ''
     });
     const { name, email, pass } = this.state;
     await axios
-      .post(`${process.env.URL}/register`, {
+      .post(`${process.env.REACT_APP_URL}/register`, {
         name: name,
         email: email,
         password: pass
       })
       .then(res => {
         alert(
-          "Cadastro realizado com sucesso! Você será redirecionado para a tela de login"
+          'Cadastro realizado com sucesso! Você será redirecionado para a tela de login'
         );
         setTimeout(() => {
-          this.props.history.push("/login");
+          this.props.history.push('/login');
         }, 2000);
       })
       .catch(err => {
@@ -68,7 +68,7 @@ export default class Register extends Component {
           <ButtonOutline content="Cadastrar" onClick={this.handleSubmit} />
         </div>
         {this.state.errorMessage &&
-          "Erro no cadastro! Deve ser quantidade de campos"}
+          'Erro no cadastro! Deve ser quantidade de campos'}
       </div>
     );
   }

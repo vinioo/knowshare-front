@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import axios from "axios";
-import io from "socket.io-client";
+import React, { Component } from 'react';
+import axios from 'axios';
+import io from 'socket.io-client';
 
-import FlipMove from "react-flip-move";
-import Bar from "./Bar";
+import FlipMove from 'react-flip-move';
+import Bar from './Bar';
 
-import "./Item.css";
-import like from "../images/like.png";
+import './Item.css';
+import like from '../images/like.png';
 
 export default class Item extends Component {
   state = {
@@ -15,23 +15,24 @@ export default class Item extends Component {
   };
   async componentDidMount() {
     this.registerToSocket();
-
-    await axios.get(`${process.env.URL}/posts`).then(res => {
+    console.log('oi')
+    console.log(process.env)
+    await axios.get(`${process.env.REACT_APP_URL}/posts`).then(res => {
       const items = res.data;
       this.setState({ items: items });
     });
   }
   registerToSocket = () => {
-    const socket = io(process.env.URL);
+    const socket = io(process.env.REACT_APP_URL);
 
-    socket.on("like", itemLiked => {
+    socket.on('like', itemLiked => {
       this.setState({
         items: this.state.items.map(item =>
           item._id === itemLiked._id ? itemLiked : item
         )
       });
     });
-    socket.on("dislike", itemLiked => {
+    socket.on('dislike', itemLiked => {
       this.setState({
         items: this.state.items.map(item =>
           item._id === itemLiked._id ? itemLiked : item
@@ -40,17 +41,15 @@ export default class Item extends Component {
     });
   };
   handleLike = async id => {
-    await axios.post(`${process.env.URL}/posts/${id}/like`);
+    await axios.post(`${process.env.REACT_APP_URL}/posts/${id}/like`);
   };
   handleDislike = async id => {
-    await axios.post(
-      `${process.env.URL}/posts/${id}/dislike`
-    );
+    await axios.post(`${process.env.REACT_APP_URL}/posts/${id}/dislike`);
   };
   getVideoThumbnail = link => {
     if (link !== undefined && link !== null) {
       let regEx =
-        "^(?:https?:)?//[^/]*(?:youtube(?:-nocookie)?.com|youtu.be).*[=/]([-\\w]{11})(?:\\?|=|&|$)";
+        '^(?:https?:)?//[^/]*(?:youtube(?:-nocookie)?.com|youtu.be).*[=/]([-\\w]{11})(?:\\?|=|&|$)';
       var matches = link.match(regEx);
       if (matches !== undefined && matches !== null) {
         return `https://img.youtube.com/vi/${matches[1]}/0.jpg`;
