@@ -16,7 +16,7 @@ export default class Item extends Component {
   async componentDidMount() {
     this.registerToSocket();
 
-    await axios.get(`https://knowshare-back.herokuapp.com/posts`).then(res => {
+    await axios.get(`${process.env.URL}/posts`).then(res => {
       const items = res.data;
       this.setState({ items: items });
     });
@@ -40,11 +40,11 @@ export default class Item extends Component {
     });
   };
   handleLike = async id => {
-    await axios.post(`https://knowshare-back.herokuapp.com/posts/${id}/like`);
+    await axios.post(`${process.env.URL}/posts/${id}/like`);
   };
   handleDislike = async id => {
     await axios.post(
-      `https://knowshare-back.herokuapp.com/posts/${id}/dislike`
+      `${process.env.URL}/posts/${id}/dislike`
     );
   };
   getVideoThumbnail = link => {
