@@ -1,0 +1,41 @@
+.panel {
+    height: 15%;
+    min-height: 500px;
+    width: 100%;
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.7) 42%, rgba(24,24,24,.8) 100%), url('../images/laptop-2557466_1920.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5rem;
+    margin-bottom: 5rem;
+}
+.panelContent h1, h3 {
+    color: #FAFAFA;
+    font-size: 2.9em;
+    font-weight: 400;
+}
+.panelContent h3 {
+    font-size: 1.4em;
+    font-weight: 400;
+}
+.panelContent {
+    width: 50%;
+}
+.bolder {
+    font-weight: 800;
+}
+.ButtonFilled button{
+    margin-top: 2rem;
+}
+@media only screen and (max-width: 1200px) {
+    .panel{
+        padding: 2.5rem;
+    }
+    .panelContent {
+        width: 100%;
+    }
+  
+  
+  }

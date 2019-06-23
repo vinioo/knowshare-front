@@ -1,0 +1,86 @@
+.itemLink {
+    text-decoration: none;
+    color: inherit;
+}
+.item {
+    width: 100%;
+    min-height: 100px;
+    height: 12vh;
+    background: #eaeaea;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.6rem 1rem;
+    box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.item:hover {
+    transform: scale(1.09);
+    transition: all .2s ease-in-out;
+    margin: 1rem;
+}
+.item p {
+    color: #1f1f1f;
+}
+.item .itemImage {
+    width: 13%;
+}
+.itemImage {
+    position: relative;
+}
+.imgOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 95%;
+    background-color: rgba(80, 80, 80, 0.3);
+}
+.imgOverlay:hover {
+    background-color: rgba(80, 80, 80, 0.1);
+    transition: all .3s ease ;
+}
+.item .itemImage img {
+    width: 100%;
+    height: 100px;
+}
+.itemDescription {
+    width: 50%;
+    position: relative;
+}
+.likeContainer {
+    width: 10%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+}
+.like {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    cursor: pointer;
+}
+.dislike {
+    width: 25px;
+    height: 25px;
+    transform: rotate(180deg);
+    margin-top: 3px;
+    margin-left: 0.6em;
+    cursor: pointer;
+}
+.like:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+    transition: all 0.2s ease-in-out;
+}
+.dislike:hover {
+    opacity: 0.9;
+    transition: all 0.2s ease-in-out;
+}
+.bar {
+    position: absolute;
+    bottom: -10px;
+}
