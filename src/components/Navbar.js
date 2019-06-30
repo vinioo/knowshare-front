@@ -12,8 +12,10 @@ import './Navbar.css';
 class Navbar extends Component {
     render() {
         return (
-            <div>
+            <div class="container-full">
                 <nav>
+                    <div className="container navbar">
+
                     <div>
                         <Link to="" class="logo">
                             <img src={logo} alt="" srcset="" />
@@ -46,6 +48,8 @@ class Navbar extends Component {
                         <div class="line1" />
                         <div class="line2" />
                         <div class="line3" />
+                    </div>
+                                            
                     </div>
                 </nav>
             </div>

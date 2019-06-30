@@ -2,7 +2,8 @@
     width: 25%;
     padding: 1.8rem;
     margin-top: -2rem;
-    background: red;
+    background: #f1f1f1;
+    margin: 20px;
 }
 .CardImage {
     width: 100%;

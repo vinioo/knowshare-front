@@ -1,10 +1,13 @@
-.HomebodyContent {
-    width: 100%;
-    height: 100%;
-    background-image: url('../images/teste2.png');
+
+.HomeBody {
+    background: url('../images/Group.svg') no-repeat top center;
     background-repeat: no-repeat;
-    background-size: contain;
-    min-height: 500px;
+    background-size: cover;
+}
+.homeBodyUpper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .HomebodyContentText {
     color: #f1f1f1;
@@ -27,12 +30,17 @@
     height: 100%;
 }
 
-.homebodyteste {
-    height: 100%;
-    min-height: 720px;
+
+
+.cardsRow {
     display: flex;
     justify-content: center;
-    flex-direction: row;
     align-items: center;
-    padding-top: 8.5em;
+    flex-direction: row;
+    margin-bottom:  -6rem;
+}
+
+.footer {
+    height: 400px;
+    background: black;
 }

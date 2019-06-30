@@ -11,10 +11,11 @@ export default class Homepage extends Component {
         return (
             <div>
                 <Navbar />
-                <div className="containerHome">
+                <div className="container">
                     <HomePanel />
-                    <HomeBody />
+
                 </div>
+                <HomeBody />
                 <HomeBodyContent />
             </div>
         );
