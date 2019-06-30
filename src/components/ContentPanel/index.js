@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import SearchPanel from './SearchPanel';
-import NavBottom from './NavBottom';
-import Item from './Item';
-import Pagination from '../components/Pagination';
+import SearchPanel from '../SearchPanel';
+import NavBottom from '../NavBottom';
+import Item from '../Item';
+import Pagination from '../index/Pagination';
 
 import { Link } from 'react-router-dom';
 import './ContentPanel.css';

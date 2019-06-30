@@ -1,6 +1,6 @@
 
 .HomeBody {
-    background: url('../images/Group.svg') no-repeat top center;
+    background: url('../../images/Group.svg') no-repeat top center;
     background-repeat: no-repeat;
     background-size: cover;
 }

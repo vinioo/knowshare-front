@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { withStyles } from '@material-ui/styles';
 import { Link } from 'react-router-dom';
-import ButtonOutline from './ButtonOutline';
+import ButtonOutline from '../ButtonOutline';
 
-import styles from '../styles/NavbarStyles';
+import styles from '../../styles/NavbarStyles';
 
-import logo from '../images/logo.png';
+import logo from '../../images/logo.png';
 
 import './Navbar.css';
 

@@ -3,10 +3,10 @@ import axios from 'axios';
 import io from 'socket.io-client';
 
 import FlipMove from 'react-flip-move';
-import Bar from './Bar';
+import Bar from '../Bar';
 
 import './Item.css';
-import like from '../images/like.png';
+import like from '../../images/like.png';
 
 export default class Item extends Component {
   state = {

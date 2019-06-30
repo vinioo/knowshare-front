@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './HomebodyContent.css';
-import ButtonFilled from './ButtonFilled';
-import Card from './Card';
-import flatimage from '../images/flatimage2.png';
+import ButtonFilled from '../ButtonFilled';
+import Card from '../Card';
+import flatimage from '../../images/flatimage2.png';
 
 export default class HomeBodyContent extends Component {
   render() {

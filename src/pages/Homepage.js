@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Navbar from '../components/Navbar';
+import Navbar from '../components/Navbar/';
 import HomePanel from '../components/HomePanel';
 import HomeBody from '../components/Homebody';
-import HomeBodyContent from '../components/HomeBodyContent';
+import HomeBodyContent from '../components/HomebodyContent';
 
 import './Homepage.css';
 

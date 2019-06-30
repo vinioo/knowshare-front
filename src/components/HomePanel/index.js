@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ButtonFilled from './ButtonFilled';
+import ButtonFilled from '../ButtonFilled';
 import './HomePanel.css'; 
 
 export default class HomePanel extends Component {
