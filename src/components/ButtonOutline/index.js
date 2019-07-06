@@ -2,10 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./ButtonOutline.css";
 
-const ButtonOutline = () => (
-  <Link to={this.props.linkTo} class="buttonOutline">
-    <button type="submit" onClick={this.props.onClick}>
-      <p>{this.props.content}</p>
+const ButtonOutline = (props) => (
+  <Link to={props.linkTo} class="buttonOutline">
+    <button type="submit" onClick={props.onClick}>
+      <p>{props.content}</p>
     </button>
   </Link>
 );

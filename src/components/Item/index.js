@@ -60,7 +60,7 @@ export default class Item extends Component {
       .sort((a, b) => a.likes - b.likes)
       .reverse()
       .map(item => (
-        <FlipMove>
+        <div className="itemContainer">
           <div className="item">
             <div className="itemImage">
               <a href={item.link} target="_blank" className="itemLink">
@@ -92,12 +92,11 @@ export default class Item extends Component {
               <Bar
                 green={item.likes}
                 red={item.dislikes}
-                barWidth={200}
                 className="bar"
               />
             </div>
           </div>
-        </FlipMove>
+        </div>
       ));
     return <div>{items}</div>;
   }

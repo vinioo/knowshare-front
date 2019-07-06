@@ -42,22 +42,24 @@ export default class Bar extends Component {
   };
   render() {
     return (
-      <div className="bar">
+      <>
         {this.state.green === 0 && this.state.red === 0 ? (
-          <div>
-            teste
-            <div className="barGrey" />
+          <div className="bar">
+            <div>
+              teste
+              <div className="barGrey" />
+            </div>
           </div>
         ) : (
           <div className="bar">
             <div
               className="barGreen"
-              style={{ width: `${this.state.green}px` }}
+              style={{ width: `${this.state.green}%` }}
             />
-            <div className="barRed" style={{ width: `${this.state.red}px` }} />
+            <div className="barRed" style={{ width: `${this.state.red}%` }} />
           </div>
         )}
-      </div>
+      </>
     );
   }
 }

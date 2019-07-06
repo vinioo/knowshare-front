@@ -1,13 +1,13 @@
-import React, { Component } from "react";
-import { withStyles } from "@material-ui/styles";
-import { Link } from "react-router-dom";
-import ButtonOutline from "../ButtonOutline";
+import React, { Component } from 'react';
+import { withStyles } from '@material-ui/styles';
+import { Link } from 'react-router-dom';
+import ButtonOutline from '../ButtonOutline';
 
-import styles from "../../styles/NavbarStyles";
+import styles from '../../styles/NavbarStyles';
 
-import logo from "../../images/logo.png";
+import logo from '../../images/logo.png';
 
-import "./Navbar.css";
+import './Navbar.css';
 
 class Navbar extends Component {
   render() {
@@ -32,7 +32,16 @@ class Navbar extends Component {
                 <a href="">Ajuda</a>
               </li>
             </ul>
-
+            <ul class="nav-links-right">
+              <li>
+                <Link to="/login" class="loginLink">
+                  Login
+                </Link>
+              </li>
+              <li>
+                <ButtonOutline content="Cadastrar" linkTo="/register" />
+              </li>
+            </ul>
             <div class="burger">
               <div class="line1" />
               <div class="line2" />

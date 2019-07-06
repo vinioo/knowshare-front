@@ -1,4 +1,6 @@
 .bar {
+    position: absolute;
+    bottom: -10px;
     height: 4px;
     width: 100%;
     display: flex;
@@ -15,4 +17,11 @@
     width: 100px;
     height: 100%;
     background: rgb(180, 180, 180);
+}
+
+@media only screen and (max-width: 1200px) {
+    .bar {
+        height: 8px;
+        width: 200px;
+    }
 }
