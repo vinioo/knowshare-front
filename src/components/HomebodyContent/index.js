@@ -31,9 +31,9 @@ export default class HomeBodyContent extends Component {
           </div>
 
           <div className="cardsRow">
+            {/* <Card />
             <Card />
-            <Card />
-            <Card />
+            <Card /> */}
           </div>
         </div>
       </div>
