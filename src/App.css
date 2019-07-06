@@ -3,29 +3,34 @@
   padding: 0;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
+  outline: 0;
 }
 body {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
+  border: 0;
 }
-p, h4 {
-  font-family: 'Raleway', sans-serif;
+p,
+h4 {
+  font-family: "Raleway", sans-serif;
 }
-h1,h2,h3 {
-  font-family: 'Catamaran', sans-serif;
+h1,
+h2,
+h3 {
+  font-family: "Catamaran", sans-serif;
 }
 
 @media only screen and (max-width: 1200px) {
-
   h1 {
-     font-size: 2em !important;
+    font-size: 2em !important;
   }
 
-  h2,h3,h4,p {
-     font-size: 1.3em !important;
+  h2,
+  h3,
+  h4,
+  p {
+    font-size: 1.3em !important;
   }
   a {
-    font-size: 1.0em !important;
+    font-size: 1em !important;
   }
-
-
 }

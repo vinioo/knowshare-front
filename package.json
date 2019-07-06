@@ -14,7 +14,8 @@
     "react-transition-group": "1.x",
     "react-video-thumbnail": "^0.1.3",
     "socket.io": "^2.2.0",
-    "socket.io-client": "^2.2.0"
+    "socket.io-client": "^2.2.0",
+    "styled-components": "^4.3.2"
   },
   "scripts": {
     "start": "react-scripts start",
