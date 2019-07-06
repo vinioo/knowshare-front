@@ -1,10 +1,8 @@
-
 .HomeBottom {
   background-color: black;
 }
 @media only screen and (max-width: 1200px) {
-.container{
+  .container {
     padding: 0 0vw !important;
-}
-
+  }
 }
