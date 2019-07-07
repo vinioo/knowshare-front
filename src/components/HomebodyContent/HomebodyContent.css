@@ -10,6 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 22px;
 }
 .HomebodyContentText {
   color: #f1f1f1;
