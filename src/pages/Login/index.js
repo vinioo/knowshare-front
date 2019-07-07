@@ -8,7 +8,7 @@ export default class index extends Component {
     return (
       <div class="container-full login">
         <div className="loginContainer">
-          <div to="" class="logo">
+          <div to="" class="loginLogo">
             <img src={logo} alt="" srcset="" />
             <h4>KnowShare.</h4>
           </div>
