@@ -1,4 +1,6 @@
 .HomeBody {
+  max-width: 1920px;
+  margin: 0 auto;
   background: url('../../images/Group.svg') no-repeat top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,15 +21,17 @@
 }
 .HomebodyContentText p {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
+  line-height: 28px;
 }
 .homebodyContentImage {
   width: 60%;
+  display: flex;
+  justify-content: flex-end;
 }
 .homebodyContentImage img {
-  width: 100%;
+  width: 80%;
   height: 100%;
-  padding: 5vw;
 }
 
 .cardsRow {
