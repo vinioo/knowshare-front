@@ -16,7 +16,7 @@ export const Background = styled.div`
 `;
 
 export const Content = styled.section`
-  width: 40%;
+  width: 30%;
   height: 40%;
 
   display: flex;
