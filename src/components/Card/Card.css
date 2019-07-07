@@ -1,15 +1,23 @@
 .Card {
-    width: 25%;
-    padding: 1.8rem;
-    margin-top: -2rem;
-    background: #f1f1f1;
-    margin: 20px;
+    width: 100%;
+    height: 100%;
+    background: white;
+    -webkit-box-shadow: -8px 6px 111px -27px rgba(0,0,0,0.39);
+    -moz-box-shadow: -8px 6px 111px -27px rgba(0,0,0,0.39);
+    box-shadow: -8px 6px 111px -27px rgba(0,0,0,0.39);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .CardImage {
-    width: 100%;
+    width: 50%;
     height: 50%;
 }
 .CardImage img {
     width: 100%;
     height: 100%;
+}
+.cardTitle p {
+    color: #9e9e9e;
 }

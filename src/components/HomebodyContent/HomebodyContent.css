@@ -1,9 +1,10 @@
 .HomeBody {
   max-width: 1920px;
   margin: 0 auto;
-  background: url('../../images/Group.svg') no-repeat top center;
+  background: url('../../images/bg4.svg') no-repeat top center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 720px;
 }
 .homeBodyUpper {
   display: flex;
@@ -41,12 +42,43 @@
   flex-direction: row;
   margin-bottom: -6rem;
 }
-
-.footer {
-  height: 400px;
-  background: black;
+.HomeBodyCards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
-
+.squares {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: '. card' '. card';
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+.teste1 {
+  width: 250px;
+  height: 250px;
+  background: red;
+  justify-self: right;
+}
+.teste2 {
+  width: 250px;
+  height: 250px;
+  background: blue;
+  justify-self: right;
+}
+.teste3 {
+  width: 250px;
+  height: 250px;
+  background: yellow;
+  grid-area: card;
+  align-content: center;
+  align-self: center;
+}
+.cardsDescription {
+  width: 40%;
+}
 @media only screen and (max-width: 1200px) {
   .homeBodyUpper {
     display: flex;

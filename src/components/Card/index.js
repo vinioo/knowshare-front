@@ -11,6 +11,7 @@ export default class Card extends Component {
                 </div>
                 <div className="CardTitle">
                     <h4>Teste</h4>
+                    <p>Lorem ipsum</p>
                 </div>
             </div>
         )
