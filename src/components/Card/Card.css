@@ -1,23 +1,31 @@
 .Card {
-    width: 100%;
-    height: 100%;
-    background: white;
-    -webkit-box-shadow: -8px 6px 111px -27px rgba(0,0,0,0.39);
-    -moz-box-shadow: -8px 6px 111px -27px rgba(0,0,0,0.39);
-    box-shadow: -8px 6px 111px -27px rgba(0,0,0,0.39);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: white;
+  -webkit-box-shadow: -8px 6px 111px -27px rgba(0, 0, 0, 0.39);
+  -moz-box-shadow: -8px 6px 111px -27px rgba(0, 0, 0, 0.39);
+  box-shadow: -8px 6px 111px -27px rgba(0, 0, 0, 0.39);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .CardImage {
-    width: 50%;
-    height: 50%;
+  width: 50%;
+  height: 50%;
 }
 .CardImage img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
-.cardTitle p {
-    color: #9e9e9e;
+.CardTitle {
+  margin-top: 18px !important;
+  padding: 0px 12px 0px 12px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.CardTitle p {
+  color: #4b4545;
 }

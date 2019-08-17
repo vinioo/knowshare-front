@@ -1,19 +1,18 @@
-import React, { Component } from 'react'
-import './Card.css'
-import image from '../../images/laptop-2557466_1920.jpg'
+import React from 'react';
+import './Card.css';
 
-export default class Card extends Component {
-    render() {
-        return (
-            <div className="Card">
-                <div className="CardImage">
-                    <img src={image} alt="" srcset=""/>
-                </div>
-                <div className="CardTitle">
-                    <h4>Teste</h4>
-                    <p>Lorem ipsum</p>
-                </div>
-            </div>
-        )
-    }
+export default function index(props) {
+  return (
+    <>
+      <div className="Card">
+        <div className="CardImage">
+          <img src={props.image} alt="" srcset="" />
+        </div>
+        <div className="CardTitle">
+          <h4>{props.title}</h4>
+          <p>{props.children}</p>
+        </div>
+      </div>
+    </>
+  );
 }

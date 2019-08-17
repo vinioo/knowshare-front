@@ -39,7 +39,7 @@ class Navbar extends Component {
                 </Link>
               </li>
               <li>
-                <ButtonOutline content="Cadastrar" linkTo="/register" />
+                <ButtonOutline linkTo="/register">Cadastrar</ButtonOutline>
               </li>
             </ul>
             <div class="burger">

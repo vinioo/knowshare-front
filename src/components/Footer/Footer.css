@@ -1,7 +1,44 @@
 .footer {
   margin-top: 6rem;
-  background: white;
-  height: 60px;
+  background: #fafafa;
+  height: 200px;
+  box-shadow: 20px 20px 6px 20px rgba(0, 0, 0, 0.35);
+}
+.footerItem {
+  width: 33.33%;
+  text-align: left;
+}
+.footerItem:nth-child(1){
+  text-align: left;
+}
+.footerItem:nth-child(2) h4{
+  margin: 0 auto;
+}
+.footerItem:nth-child(3){
+  text-align: right;
+}
+.footerRow {
+  height: 50%;
   display: flex;
   align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+.footerList {
+  list-style: none;
+  display: inline-flex;
+}
+.footerList li {
+  margin-right: 16px;
+}
+.footerIcon {
+  width: 26px;
+  margin-left: 12px;
+}
+.footerBottom {
+  display: flex;
+  justify-content: center;
+}
+.footerBottom p {
+  font-size: 12px;
 }

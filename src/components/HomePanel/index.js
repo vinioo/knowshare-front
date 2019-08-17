@@ -17,7 +17,7 @@ export default class HomePanel extends Component {
                     <h3>
                         E o melhor, de <span className="bolder">graça!</span>
                     </h3>
-                    <ButtonFilled content="Iniciar Jornada!" className="ButtonFilled" linkTo="/content/"/>
+                    <ButtonFilled className="ButtonFilled" linkTo="/content/">Iniciar Jornada!</ButtonFilled>
                 </div>
             </div>
         );

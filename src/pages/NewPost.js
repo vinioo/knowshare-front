@@ -71,7 +71,7 @@ export default class NewPost extends Component {
               onChange={this.handleInput}
               name="link"
             />
-            <ButtonOutline content="Enviar post!" onClick={this.handleSubmit} />
+            <ButtonOutline onClick={this.handleSubmit}>Enviar post!</ButtonOutline>
           </div>
         </div>
       </div>

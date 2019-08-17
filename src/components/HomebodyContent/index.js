@@ -1,8 +1,16 @@
 import React, { Component } from 'react';
-import './HomebodyContent.css';
+
 import ButtonFilled from '../ButtonFilled';
+import Button from '../Button';
 import Card from '../Card';
+
+import './HomebodyContent.css';
+
 import flatimage from '../../images/flatimage2.png';
+import mindIcon from '../../images/intelligence.svg';
+import careerIcon from '../../images/career.svg';
+import trophyIcon from '../../images/trophy.svg';
+import ButtonOutline from '../ButtonOutline';
 
 export default class HomeBodyContent extends Component {
   render() {
@@ -24,7 +32,7 @@ export default class HomeBodyContent extends Component {
                   <br /> Não fique de fora!
                   <br />
                 </p>
-                <ButtonFilled content="Começar!" />
+                <Button>Começar!</Button>
               </div>
               <div className="homebodyContentImage">
                 <img src={flatimage} alt="" srcset="" />
@@ -32,22 +40,29 @@ export default class HomeBodyContent extends Component {
             </div>
           </div>
         </div>
-          <div className="container HomeBodyCards">
-            <div className="squares">
-              <div className="teste1">
-                <Card />
-              </div>
-              <div className="teste2">
-                <Card />
-              </div>
-              <div className="teste3">
-                <Card />
-              </div>
+        <div className="container HomeBodyCards">
+          <div className="squares">
+            <div className="teste1">
+              <Card image={mindIcon} title="Aprenda muito">E compartilhe com a comunidade!</Card>
             </div>
-            <div className="cardsDescription">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolorem eligendi eum beatae rem provident. Magni deserunt, voluptas cupiditate ea maxime atque laboriosam rerum est doloremque saepe sequi iste vero.</p>
+            <div className="teste2">
+              <Card image={careerIcon}  title="Evolua suas skills">Aumente o seu conhecimento!</Card>
+            </div>
+            <div className="teste3">
+              <Card image={trophyIcon} title="Participe do ranking">Ajude membros e ganhe pontos!</Card>
             </div>
           </div>
+          <div className="cardsDescription">
+            <h1>A comunidade te aguarda!</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+              dolorem eligendi eum beatae rem provident. Magni deserunt,
+              voluptas cupiditate ea maxime atque laboriosam rerum est
+              doloremque saepe sequi iste vero.
+            </p>
+          <ButtonFilled>Ranking</ButtonFilled>
+          </div>
+        </div>
       </>
     );
   }
