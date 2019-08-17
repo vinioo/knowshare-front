@@ -15,7 +15,7 @@ export default class Homepage extends Component {
         <div className="container">
           <HomePanel />
         </div>
-        <HomeBody />
+        
         <HomeBodyContent />
         <Footer />
       </div>

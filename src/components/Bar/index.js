@@ -46,7 +46,6 @@ export default class Bar extends Component {
         {this.state.green === 0 && this.state.red === 0 ? (
           <div className="bar">
             <div>
-              teste
               <div className="barGrey" />
             </div>
           </div>

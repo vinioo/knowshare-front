@@ -10,7 +10,7 @@ import flatimage from '../../images/flatimage2.png';
 import mindIcon from '../../images/intelligencepurple.svg';
 import careerIcon from '../../images/careerpurple.svg';
 import trophyIcon from '../../images/trophypurple.svg';
-import ButtonOutline from '../ButtonOutline';
+import Homebody from '../Homebody';
 
 export default class HomeBodyContent extends Component {
   render() {
@@ -40,7 +40,9 @@ export default class HomeBodyContent extends Component {
             </div>
           </div>
         </div>
+        <Homebody />
         <div className="container HomeBodyCards">
+       
           <div className="squares">
             <div className="teste1">
               <Card image={mindIcon} title="Aprenda muito">E compartilhe com a comunidade!</Card>

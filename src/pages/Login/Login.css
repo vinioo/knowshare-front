@@ -8,11 +8,11 @@
 }
 
 .loginContainer {
-  width: 580px;
+  width: 460px;
   height: 430px;
   min-width: 300px;
   background: white;
-  border-radius: 40px;
+  border-radius: 25px;
 }
 .loginLogo {
   background: #fafafa;
@@ -30,6 +30,9 @@
   -moz-box-shadow: 0px 0px 16px 0px rgba(161,161,161,1);
   box-shadow: 0px 0px 2px 0px rgba(161,161,161,1);
 }
+.loginLogo img {
+  margin-right: 12px;
+}
 .loginContent {
   width: 62%;
   margin: 0 auto;
@@ -43,7 +46,7 @@
 .loginContent input {
   width: 100%;
   height: 48px;
-  border-radius: 40px;
+  border-radius: 30px;
   outline: none;
   border: 2.2px solid #7054be;
   margin-bottom: 25px;

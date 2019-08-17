@@ -18,7 +18,7 @@ class Navbar extends Component {
             <div>
               <Link to="" class="logo">
                 <img src={logo} alt="" srcset="" />
-                <h4>KnowShare.</h4>
+                <h4>KnowShare</h4>
               </Link>
             </div>
             <ul class="nav-links-left">

@@ -44,34 +44,37 @@ export default class NewPost extends Component {
     return (
       <div>
         <div className="NewPost">
-          <h1>Novo Post</h1>
+    
           <div className="NewPostContent">
+            <div className="NewPostForm">
+            <h1>Novo Post (Provisório)</h1>
             <Input
               placeText="Digite o titulo"
               onChange={this.handleInput}
               name="title"
-            />
+              />
             <Input
               placeText="Digite o autor"
               onChange={this.handleInput}
               name="author"
-            />
+              />
             <Input
               placeText="Digite a descricao"
               onChange={this.handleInput}
               name="description"
-            />
+              />
             <Input
               placeText="Digite as hashtags"
               onChange={this.handleInput}
               name="hashtags"
-            />
+              />
             <Input
               placeText="Digite o link"
               onChange={this.handleInput}
               name="link"
-            />
+              />
             <ButtonOutline onClick={this.handleSubmit}>Enviar post!</ButtonOutline>
+              </div>
           </div>
         </div>
       </div>

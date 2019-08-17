@@ -1,13 +1,13 @@
 import React from "react";
 import "./Input.css";
 
-const Input = () => (
+const Input = (props) => (
   <input
     type="text"
-    placeholder={this.props.placeText}
+    placeholder={props.placeText}
     className="Input"
-    onChange={this.props.onChange}
-    name={this.props.name}
+    onChange={props.onChange}
+    name={props.name}
   />
 );
 

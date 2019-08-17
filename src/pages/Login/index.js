@@ -10,7 +10,7 @@ export default class index extends Component {
         <div className="loginContainer">
           <div to="" class="loginLogo">
             <img src={logo} alt="" srcset="" />
-            <h4>KnowShare.</h4>
+            <h4>KnowShare</h4>
           </div>
           <div className="loginContent">
             <input type="text" name="" id="" placeholder="Digite o seu email"/>
