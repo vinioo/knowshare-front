@@ -9,7 +9,7 @@ export default class NavBottom extends Component {
                 <div className="container">
                     <div className="NavBottomContainer">
                         <Link to>
-                            <p>Desenvolvimento Web</p>
+                            <p class="selected">Desenvolvimento Web</p>
                         </Link>
                         <Link to>
                             <p>Javascript</p>

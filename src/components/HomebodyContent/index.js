@@ -7,9 +7,9 @@ import Card from '../Card';
 import './HomebodyContent.css';
 
 import flatimage from '../../images/flatimage2.png';
-import mindIcon from '../../images/intelligence.svg';
-import careerIcon from '../../images/career.svg';
-import trophyIcon from '../../images/trophy.svg';
+import mindIcon from '../../images/intelligencepurple.svg';
+import careerIcon from '../../images/careerpurple.svg';
+import trophyIcon from '../../images/trophypurple.svg';
 import ButtonOutline from '../ButtonOutline';
 
 export default class HomeBodyContent extends Component {
@@ -32,7 +32,7 @@ export default class HomeBodyContent extends Component {
                   <br /> Não fique de fora!
                   <br />
                 </p>
-                <Button>Começar!</Button>
+                <Button purple>Começar!</Button>
               </div>
               <div className="homebodyContentImage">
                 <img src={flatimage} alt="" srcset="" />
@@ -60,7 +60,7 @@ export default class HomeBodyContent extends Component {
               voluptas cupiditate ea maxime atque laboriosam rerum est
               doloremque saepe sequi iste vero.
             </p>
-          <ButtonFilled>Ranking</ButtonFilled>
+          <ButtonFilled shadow>Boooora!</ButtonFilled>
           </div>
         </div>
       </>

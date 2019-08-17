@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 nav {
-    min-height: 8vh;
+    min-height: 74px;
     background-color: #ffffff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -13,7 +13,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 100%;
-    min-height: 8vh;
+    min-height: 74px;
 }
 
 .logo {

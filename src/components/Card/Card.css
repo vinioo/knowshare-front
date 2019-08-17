@@ -9,6 +9,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 8px; 
 }
 .CardImage {
   width: 50%;
@@ -25,7 +26,9 @@
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  color: #1f1f1f;
 }
 .CardTitle p {
   color: #4b4545;
+  font-size: 15px;
 }

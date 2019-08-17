@@ -10,21 +10,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 22px;
 }
 .HomebodyContentText {
   color: #f1f1f1;
   width: 40%;
   transform: scale(1);
   transform-origin: 0% 0% 0px;
+  margin-top: 12px;
 }
 .HomebodyContentText h1 {
   padding-bottom: 18px;
 }
 .HomebodyContentText p {
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 28px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 26px;
+}
+.HomebodyContentText button {
+  margin-top: 24px;
 }
 .homebodyContentImage {
   width: 60%;
@@ -82,10 +85,16 @@
   justify-content: flex-end;
 }
 .cardsDescription h1 {
+  text-align: right;
   margin-bottom: 2rem;  
+  color: #1f1f1f;
 }
-.cardsDescription p {
+.cardsDescription {
+  text-align: right;
+  font-size: 17px;
   line-height: 26px;
+  border-left: 1.5px solid rgba(180, 180, 180, 0.25);
+  padding-left: 32px;
 }
 @media only screen and (max-width: 1200px) {
   .homeBodyUpper {

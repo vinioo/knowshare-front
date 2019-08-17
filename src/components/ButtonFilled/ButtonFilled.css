@@ -6,6 +6,9 @@
     background: #7054BE;
     cursor: pointer;
 }
+.shadow {
+    box-shadow: 0px 8px 28px rgba(125, 111, 238, 0.6);
+  }
 .ButtonFilled button p {
     font-size: 1.3em;
     letter-spacing: .5px;

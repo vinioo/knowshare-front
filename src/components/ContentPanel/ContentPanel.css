@@ -1,10 +1,14 @@
 .floatButton{ 
     border-radius: 50%;
-    background: red;
     width: 60px;
     height: 60px;
     position: fixed;
-    bottom: 0;
-    right: 80px;
+    bottom: 12px;
+    right: 112px;
     z-index: 1;
+}
+
+.floatButton:hover {
+    transform: scale(0.9);
+    transition: all .2s ease-in-out;
 }

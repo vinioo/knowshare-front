@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom'
 import axios from 'axios';
 import io from 'socket.io-client';
 
@@ -74,7 +75,7 @@ export default class Item extends Component {
                 {item.title} - {item.author}
               </h4>
               <p>{item.descripton}</p>
-              <p>{item.hashtags}</p>
+              <Link class="hashtags">{item.hashtags}</Link>
             </div>
             <div className="likeContainer">
               <img

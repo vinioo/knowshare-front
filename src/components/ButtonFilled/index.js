@@ -4,6 +4,6 @@ import './ButtonFilled.css'
 
 export default function ButtonFilled(props) {
     return (
-        <Link to={props.linkTo} class="ButtonFilled"><button><p>{props.children}</p></button></Link>
+        <Link to={props.linkTo} class="ButtonFilled"><button className={props.shadow && 'shadow'}><p>{props.children}</p></button></Link>
     )
 }

@@ -23,6 +23,21 @@
     border-radius: 37px;
     min-height: 42px;
 }
+.search {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.inputFilled::placeholder {
+    font-family: "Raleway", sans-serif;
+    padding-left: 22px;
+}
+.searchIcon {
+    position: absolute; 
+    right: 22px;
+    width: 30px;
+    height: 22px;
+}
 
 @media only screen and (max-width: 1200px) {
     .searchPanel {
