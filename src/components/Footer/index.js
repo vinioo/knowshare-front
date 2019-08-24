@@ -1,16 +1,17 @@
 import React from 'react';
-import './Footer.css';
 
-import linkedinIcon from '../../images/linkedin.svg'
-import facebookIcon from '../../images/facebook.svg'
-import instagramIcon from '../../images/instagram.svg'
+import { Footer, FooterItem, FooterList, FooterIcon, FooterBottom, FooterRow } from './styles'
 
-export default function Footer() {
+import linkedinIcon from '../../images/linkedin.svg';
+import facebookIcon from '../../images/facebook.svg';
+import instagramIcon from '../../images/instagram.svg';
+
+export default function index() {
   return (
-    <div className="container-full footer">
-      <div className="container footerRow">
-        <div className="footerItem">
-          <ul className="footerList">
+    <Footer className="container-full">
+      <FooterRow className="container">
+        <FooterItem>
+          <FooterList>
             <li>
               <h4>Quem somos</h4>
             </li>
@@ -24,21 +25,23 @@ export default function Footer() {
             <li>
               <h4>Contato</h4>
             </li>
-          </ul>
-        </div>
-        <div className=" footerItem logo"><h4>KnowShare</h4></div>
-        <div className=" footerItem ">
-            <img src={linkedinIcon} alt="" srcset="" className="footerIcon"/>
-            <img src={facebookIcon} alt="" srcset="" className="footerIcon"/>
-            <img src={instagramIcon} alt="" srcset="" className="footerIcon"/>
-
-
-        </div>
-      </div>
-      <div className="footerRow footerBottom">
-          <hr/>
-          <p>&copy; KnowShare  2019 - Vinicius Oliveira - All rights reserved</p>
-      </div>
-    </div>
+          </FooterList>
+        </FooterItem>
+        <FooterItem className="logo">
+          <h4>KnowShare</h4>
+        </FooterItem>
+        <FooterItem>
+          <FooterIcon src={linkedinIcon} alt="" srcset="" className="footerIcon" />
+          <FooterIcon src={facebookIcon} alt="" srcset="" className="footerIcon" />
+          <FooterIcon src={instagramIcon} alt="" srcset="" className="footerIcon" />
+        </FooterItem>
+      </FooterRow>
+      <FooterRow>
+      <FooterBottom>
+        <hr />
+        <p>&copy; KnowShare 2019 - Vinicius Oliveira - All rights reserved</p>
+      </FooterBottom>
+      </FooterRow>
+    </Footer>
   );
 }

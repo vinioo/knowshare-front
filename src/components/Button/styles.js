@@ -1,14 +1,16 @@
 import styled from 'styled-components';
 
 export const Button = styled.button`
-  width: 220px ;
+  width: 220px;
   height: 56px;
   border-radius: 38px 38px 38px 38px;
-  border: ${props => props.outline || props.filled ? '3px solid #7054BE' : '3px solid white'};
+  border: ${props =>
+    props.outline || props.filled ? '3px solid #7054BE' : '3px solid white'};
   background: #fafafa;
   background: ${props => props.outline && 'transparent'};
   background: ${props => props.filled && '#7054BE'};
-  box-shadow: ${props => props.shadow && '0px 8px 28px rgba(125, 111, 238, 0.6)'};
+  box-shadow: ${props =>
+    props.shadow && '0px 8px 28px rgba(125, 111, 238, 0.6)'};
   margin-top: ${props => `${props.mt}rem`};
   margin-bottom: ${props => `${props.mb}rem`};
   box-sizing: border-box;
@@ -23,7 +25,7 @@ export const Button = styled.button`
     text-decoration: none;
   }
   @media only screen and (max-width: 1200px) {
-    width: 200px; 
+    width: 200px;
     height: 46px;
   }
 `;

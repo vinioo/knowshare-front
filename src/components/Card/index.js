@@ -1,18 +1,18 @@
 import React from 'react';
-import './Card.css';
+import { Card, CardImage, CardTitle } from './styles';
 
 export default function index(props) {
   return (
     <>
-      <div className="Card">
-        <div className="CardImage">
+      <Card>
+        <CardImage>
           <img src={props.image} alt="" srcset="" />
-        </div>
-        <div className="CardTitle">
+        </CardImage>
+        <CardTitle>
           <h4>{props.title}</h4>
           <p>{props.children}</p>
-        </div>
-      </div>
+        </CardTitle>
+      </Card>
     </>
   );
 }
