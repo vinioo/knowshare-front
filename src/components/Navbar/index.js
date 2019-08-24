@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { withStyles } from '@material-ui/styles';
 import { Link } from 'react-router-dom';
-import ButtonOutline from '../ButtonOutline';
+import Button from '../Button';
 
 import styles from '../../styles/NavbarStyles';
 
@@ -39,7 +39,7 @@ class Navbar extends Component {
                 </Link>
               </li>
               <li>
-                <ButtonOutline linkTo="/register">Cadastrar</ButtonOutline>
+                <Button outline linkTo="/register">Cadastrar</Button>
               </li>
             </ul>
             <div class="burger">

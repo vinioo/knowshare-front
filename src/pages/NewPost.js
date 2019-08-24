@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 
 import Input from '../components/Input';
-import ButtonOutline from '../components/ButtonOutline';
+import Button from '../components/Button';
 
 import './NewPost.css';
 
@@ -73,7 +73,7 @@ export default class NewPost extends Component {
               onChange={this.handleInput}
               name="link"
               />
-            <ButtonOutline onClick={this.handleSubmit}>Enviar post!</ButtonOutline>
+            <Button outline onClick={this.handleSubmit}>Enviar post!</Button>
               </div>
           </div>
         </div>

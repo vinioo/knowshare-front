@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-import ButtonFilled from '../ButtonFilled';
 import Button from '../Button';
 import Card from '../Card';
 
@@ -62,7 +61,7 @@ export default class HomeBodyContent extends Component {
               voluptas cupiditate ea maxime atque laboriosam rerum est
               doloremque saepe sequi iste vero.
             </p>
-          <ButtonFilled shadow>Boooora!</ButtonFilled>
+          <Button filled shadow mt={2}>Boooora!</Button>
           </div>
         </div>
       </>
