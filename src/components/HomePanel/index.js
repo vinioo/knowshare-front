@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ButtonFilled from '../ButtonFilled';
+import Button from '../Button';
 import './HomePanel.css'; 
 
 export default class HomePanel extends Component {
@@ -17,7 +17,7 @@ export default class HomePanel extends Component {
                     <h3>
                         E o melhor, de <span className="bolder">graça!</span>
                     </h3>
-                    <ButtonFilled className="ButtonFilled" linkTo="/content/">Iniciar Jornada!</ButtonFilled>
+                    <Button filled mt={2} linkTo="/content/">Iniciar Jornada!</Button>
                 </div>
             </div>
         );

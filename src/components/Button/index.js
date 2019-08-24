@@ -1,10 +1,14 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import './Button.css'
+import React from 'react';
+
+import { Button } from './styles';
+import { Link } from 'react-router-dom';
 
 export default function ButtonFilled(props) {
-  console.log(props)
-    return (
-        <Link to={props.linkTo} class="Button"><button className={props.purple && 'purpleText'}><p>{props.children}</p></button></Link>
-    )
+  return (
+    <Link to={props.linkTo} class="Button">
+      <Button {...props}>
+        <p>{props.children}</p>
+      </Button>
+    </Link>
+  );
 }

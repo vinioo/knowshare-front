@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-import ButtonFilled from '../ButtonFilled';
 import Button from '../Button';
 import Card from '../Card';
 
@@ -42,16 +41,21 @@ export default class HomeBodyContent extends Component {
         </div>
         <Homebody />
         <div className="container HomeBodyCards">
-       
           <div className="squares">
             <div className="teste1">
-              <Card image={mindIcon} title="Aprenda muito">E compartilhe com a comunidade!</Card>
+              <Card image={mindIcon} title="Aprenda muito">
+                E compartilhe com a comunidade!
+              </Card>
             </div>
             <div className="teste2">
-              <Card image={careerIcon}  title="Evolua suas skills">Aumente o seu conhecimento!</Card>
+              <Card image={careerIcon} title="Evolua suas skills">
+                Aumente o seu conhecimento!
+              </Card>
             </div>
             <div className="teste3">
-              <Card image={trophyIcon} title="Participe do ranking">Ajude membros e ganhe pontos!</Card>
+              <Card image={trophyIcon} title="Participe do ranking">
+                Ajude membros e ganhe pontos!
+              </Card>
             </div>
           </div>
           <div className="cardsDescription">
@@ -62,7 +66,9 @@ export default class HomeBodyContent extends Component {
               voluptas cupiditate ea maxime atque laboriosam rerum est
               doloremque saepe sequi iste vero.
             </p>
-          <ButtonFilled shadow>Boooora!</ButtonFilled>
+            <Button filled shadow mt={2}>
+              Boooora!
+            </Button>
           </div>
         </div>
       </>

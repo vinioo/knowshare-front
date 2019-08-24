@@ -40,7 +40,7 @@ nav {
 .nav-links-right {
     display: flex;
     justify-content: space-around;
-    width: 18%;
+    width: 30%;
 }
 .loginLink {
     margin-right: 2rem;
@@ -57,7 +57,7 @@ nav {
     color: #1f1f1f;
     text-decoration: none;
     letter-spacing: 1.5px;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 14px;
 }
 
