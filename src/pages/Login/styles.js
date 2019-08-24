@@ -1,4 +1,21 @@
-import styled from "styled-components";
+import styled from 'styled-components';
+
+export const Container = styled.div`
+  background: linear-gradient(196.19deg, #7054be 17.02%, #54b1be 119.33%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+`;
+
+export const Box = styled.div`
+  width: 460px;
+  height: 430px;
+  min-width: 300px;
+  background: white;
+  border-radius: 25px;
+`;
 
 export const Background = styled.div`
   width: 100%;
@@ -36,7 +53,7 @@ export const Logo = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-family: "Raleway";
+  font-family: 'Raleway';
   margin-left: 10px;
 `;
 
@@ -74,5 +91,23 @@ export const ForgetPass = styled.a`
 
   &:hover {
     text-decoration: underline;
+  }
+`;
+
+export const Buttons = styled.div`
+  padding-top: 12px;
+  width: 62%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  > button {
+    width: 160px;
+    height: 48px;
+    border-radius: 40px;
+    border: 2.2px solid #7054be;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
   }
 `;

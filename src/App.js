@@ -15,9 +15,9 @@ function App() {
       <GlobalStyle />
       <Switch>
         <Route exact path="/" render={() => <Homepage />} />
-        <Route exact path="/content" render={() => <Content />} />
+        <Route path="/content" render={() => <Content />} />
 
-        <Route exact path="/login" component={Login} />
+        <Route path="/login" component={Login} />
 
         <Route
           exact
