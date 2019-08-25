@@ -1,6 +1,6 @@
 # Observacoes 
 O projeto ficou parado por mais de um mes, estou retomando agora, e a intencao é refatorá-lo 100% em hooks, styled components, separar melhor os componentes, analisar se sera necessario redux/context e responsividade.
-O back end tambem precisa de refatoracoes, como validacoes, filtros e ordenacao.
+O back end tambem precisa de refatoracoes, como validacoes, filtros e ordenacao..
 # What is this project?
 
 This repository contains the web version of Know Share.
