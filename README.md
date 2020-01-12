@@ -1,3 +1,4 @@
+### The project will be completely refactored to have a styleguide and have all pages on Figma.
 
 
 ## What is Know Share?
