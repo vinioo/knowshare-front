@@ -6,7 +6,4 @@ Considering the huge amount of content, its usual to dont know where to find the
 
 
 
-## Project moved to organization
-This project was moved to: https://github.com/muvesoft
-
 
